@@ -219,7 +219,15 @@
 									</h2>
 									<div class="box">
 										<p>Regular expression patterns are the simplest form of expressions containing a string of characters enclosed in slashes. It can be a sequence of letters, numbers, or a combination of both.
-											In the following example, the program outputs all the lines starting with "A". If the specified string is a part of a larger word, it is also printed.</p>
+											In the following example, the program outputs all the lines starting with "A". If the specified string is a part of a larger word, it is also printed.											Relational Expression Patterns
+											Another type of awk patterns are relational expression patterns. The relational expression patterns involve using any of the following relational operators: <, <=, ==, !=, >=, and >.
+											A range pattern is a pattern consisting of two patterns separated by a comma. Range patterns perform the specified action for each line between the occurrence of pattern one and pattern two.
+											Special expression patterns include BEGIN and END which denote program initialization and end. The BEGIN pattern matches the beginning of the input, before the first record is processed. The END pattern matches the end of the input, after the last record has been processed.
+											The awk command allows users to combine two or more patterns using logical operators. The combined patterns can be any Boolean combination of patterns. The logical operators for combining patterns are:
+
+											|| (or)
+											&& (and)
+											! (not)</p>
 									</div>
 
 									<hr />
@@ -230,6 +238,7 @@
 
 										An example of a regular expression pattern.
 </code></pre>
+
 
 							</section>
 
@@ -261,16 +270,16 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
+								<p>671 Rua São Paulo<br />
+								Itabuna, Bahia 45607-358</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<p><a href="#">55(73) 999-504902</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p><a href="#">orlando.technicalwriter@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
