@@ -123,19 +123,20 @@
 
 									<table>
 										<tr>
-										  <th>Header 1</th>
-										  <th>Header 2</th>
-										  <th>Header 3</th>
+										  <th>AWK Operations</th>
+										  <th>AWK Statements</th>
+										  <th>AWK Patterns
+										</th>
 										</tr>
 										<tr>
-										  <td>Data 1</td>
-										  <td>Data 2</td>
-										  <td>Data 3</td>
+										  <td>Scan a file line by line</td>
+										  <td>if-else, while, for, break</td>
+										  <td>Regular expressions.</td>
 										</tr>
 										<tr>
-										  <td>Data 4</td>
-										  <td>Data 5</td>
-										  <td>Data 6</td>
+										  <td>Split the input line/file into fields</td>
+										  <td>works by evaluating the condition</td>
+										  <td>Arithmetic relational expressions.</td>
 										</tr>
 									  </table>
 									  
@@ -214,24 +215,20 @@
 									<hr />
 
 								<!-- Box -->
-									<h2>Box</h2>
+									<h2>Regular Expression Patterns
+									</h2>
 									<div class="box">
-										<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor.</p>
+										<p>Regular expression patterns are the simplest form of expressions containing a string of characters enclosed in slashes. It can be a sequence of letters, numbers, or a combination of both.
+											In the following example, the program outputs all the lines starting with "A". If the specified string is a part of a larger word, it is also printed.</p>
 									</div>
 
 									<hr />
 
 								<!-- Preformatted Code -->
 									<h2>Preformatted</h2>
-									<pre><code>i = 0;
+									<pre><code>awk '$1 ~ /^A/ {print $0}' employees.txt
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';
+										An example of a regular expression pattern.
 </code></pre>
 
 							</section>
